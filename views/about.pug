@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../static/about.css">
+    <link rel="icon" type="image" href="../static/images/Logo.png">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img class="logoimage" src="../static/images/dumbbell.png">
+        </div>
+        <ul>
+            <li class="option"><a href="/">HOME</a></li>
+            <li class="option"><a href="/enroll">ENROLL NOW</a></li>
+            <li class="option"><a href="/about">ABOUT US</a></li>
+            <li class="option"><a href="#foot">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="slide-container">
+        <div class="slide">
+            <img id="gympic" src="../static/images/gym.jpg">
+        </div>
+        <div class="slide">
+            <img id="gympic" src="../static/images/intro2.jpg">
+        </div>
+        <div class="slide">
+            <img id="gympic" src="../static/images/intro3.jpg">
+        </div>
+        <div class="slide">
+            <img id="gympic" src="../static/images/intro4.jpg">
+        </div>
+         <div class="slide">
+            <img id="gympic" src="../static/images/intro5.jpg">
+        </div>
+         <div class="slide">
+            <img id="gympic" src="../static/images/intro6.jpg">
+        </div>
+    </div>
+    <span class="arrow prev" onclick=control(-1)>&#10094;</span>
+    <span class="arrow next" onclick=control(1)>&#10095;</span>
+    <div class="intro">
+        <div id="points">
+            <button id="one" class="value" onclick=myfunc()>
+                <h3>What We Are</h3>
+            </button>
+            <button id="two" class="value" onclick=myfunc1()>
+                <h3>What We Offer</h3>
+            </button>
+            <button id="three" class="value" onclick=myfunc2()>
+                <h3>What We Are Different</h3>
+            </button>
+        </div>
+        <div id="description">
+            <div id="optionpic">
+                <img id="myimage" src="../static/images/option11.png">
+                <div id="optiondes">
+                    <h4>Ramesh Fitness Point is a gym that is dedicated to helping individuals achieve their fitness goals in a comfortable and welcoming environment. The gym is named after its founder, Ramesh, who is a well-respected fitness expert in the community.</h4><br>
+                    <h4>At Ramesh Fitness Point, you will find state-of-the-art equipment, modern facilities, and a team of experienced trainers who are committed to helping you reach your fitness goals. Whether you are looking to build muscle, lose weight, or improve your overall health and well-being, the team at Ramesh Fitness Point can provide you with the guidance, support, and motivation you need to succeed.</h4><br>
+                    <h4>The gym offers a range of programs and services, including group fitness classes, personal training, nutritional counseling, and more. The group fitness classes are designed to be fun, challenging, and effective, with options such as yoga, spin, and strength training. Personal training sessions are tailored to each individual's specific needs and goals, and the trainers work closely with clients to ensure they are progressing towards their objectives.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <div class="Logo">
+            <h1>Ramesh Fitness Point </h1>
+        </div>
+        <div class="footcontact">
+            <div class="gmail">
+                <h3 class="mailus">Mail Us</h3>
+                <form class="formgmail" name="myform">
+                <div class="formdiv">
+                <label for="name1">
+                    <h4 class="heading">Name : </h4>
+                </label>
+                <input class="formval" id="name1" type="text" name='name' placeholder="Enter Your Name" required>
+                </div>
+                <div class="formdiv">
+                <label for="gmail">
+                    <h4 class="heading">G-mail : </h4>
+                </label>
+                <input class="formval" id="gmail" type="text" name='gmail' placeholder="Enter Your G-Mail" required>
+                </div>
+                <div class="formdiv">
+                <label for="contact">
+                    <h4 class="heading">Contact No : </h4>
+                </label>
+                <input class="formval" id="contact" type="number" name='contact' placeholder="Enter Your Contact">
+                </div>
+                <div class="formdiv">
+                <label for="message">
+                    <h4 class="heading">Message : </h4>
+                </label>
+                <input class="formval" id="message" type="text" name='message' placeholder="Drop your message...." required>
+                </div>
+                <button id="btn" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="follow">
+                <div class="followus">
+                    <h3>Follow Us</h3>
+                </div>
+                    <div class="images">
+                        <img class="followpoint" src="../static/images/facebook.png">
+                        <img class="followpoint" src="../static/images/instagram.png">
+                        <img class="followpoint" src="../static/images/twitterlogo.jpeg">
+                    </div>
+            </div>
+        <div class="callus">
+        <div class="followus">
+        <h3>Contact Us</h3>
+        </div>
+        <div class="contact">
+        <img class="followpoint1" src="../static/images/phone-call.png">
+        <h2>94367839746</h2>
+        </div>
+        <div class="contact">
+        <img class="followpoint1" src="../static/images/whatsapp.png">
+        <h2>87374682982</h2>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../static/about.js"></script>
+</body>
+
+</html>

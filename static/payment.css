@@ -1,0 +1,65 @@
+body{
+    height:auto;
+}
+#main::before{
+    content:"";
+    background-image:url("images/Confirm.jpg");
+    background-size:cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity:0.9;
+    z-index:-1;
+}
+#main{
+    display: flex;
+    justify-content: center;
+}
+#box{
+    height:450px;
+    background-color: #fff;
+    border: 2px solid black;
+    margin:150px 0px;
+    padding: 35px 40px;
+    border-radius: 20px;
+    opacity: 0.85;
+}
+h1{
+    text-align: center;
+}
+#box a{
+    text-decoration: none;
+    color:rgb(240, 234, 235);
+    font-size: large;
+    background-color: rgb(8, 7, 7);
+    border:1px solid white;
+    border-radius:20px;
+    padding:10px 35px;
+    position: relative;
+    top:30px;
+    left:160px;
+}
+
+#box a:hover{
+    background-color: #fff;
+    color:black;
+    border:2px solid black;
+}
+#Pr{
+    border:1px solid black;
+    border-radius: 10px;
+    padding:3px 15px;
+    position: relative;
+    top:-45px;
+    left:265px;
+}
+#Pr:hover{
+    background-color: #fff;
+    color:black;
+    border:2px solid black;
+}
+#box h1{
+    text-align: center;
+}

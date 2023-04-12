@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@700&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@700&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&display=swap'); 
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes anim {
+    from{height: 350px;
+    width: 350px;
+    font-size: medium;}
+    to{
+        height:370px;
+        width: 400px;
+        font-size: large;
+    }
+    
+}
+nav{
+    background-color:rgb(119, 61, 61);
+    height:4%;
+    border: 2px solid black;
+    display: flex;
+    padding:0% 2%;
+
+}
+.logoimage{
+    height: 50px;
+    width: 63px;
+}
+nav ul{
+    display:inline-flex;
+    justify-content: center;
+    margin:1% 19%;
+    list-style: none;
+    width: 50%;
+}
+nav li{
+    margin:0% 2%;
+    padding: 1% 2%;
+    text-align:justify; 
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(241, 239, 235);
+}
+nav a::after{
+    content:"";
+    display:block;
+    background-color:rgb(241, 239, 235);
+    height:12%;
+    width:0%;
+    position: relative;
+    top:40%;
+    transition: all ease-in-out 300ms;
+}
+nav a:hover::after{
+    width:100%;
+}
+.intropic{
+    height: auto;
+    width: 100%;   
+}
+.intro{
+    position: relative;
+}
+.text1{
+    position: absolute;
+    top:10%;
+    left:15%;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    font-family: italic;
+}
+.text2 p{
+    position: absolute;
+    top:50%;
+    left:4%;
+    font-size: 2rem;
+    color:white;
+}
+.text2 a{
+    border:1px solid white;
+    position: absolute;
+    top:56%;
+    left:14%;
+    
+    padding: 0.5% 1.5%;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(119, 61, 61);
+    font-size:1.2rem;
+}
+.text2 a:hover{
+    color:rgb(119, 61, 61);
+    background-color: white;
+}
+.frontpoints{
+    position: relative;
+    top:-10rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    border:2px solid black;
+    margin:2% 10%;
+    padding:2%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.points{
+    border:2px solid black;
+    border-radius: 10px;
+    padding:2% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.points img{
+    height:4rem;
+    width: 6rem;
+}
+#foot{
+    background-color:rgb(119, 61, 61);
+    color:white;
+    padding: 1% 0%;
+    border:2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Logo{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+.Logo::after{
+    display: block;
+    content:"";
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    
+}
+.footcontact{
+    display: flex;
+}
+.followpoint{
+    height: auto;
+    width: 18%;
+}
+.followpoint1{
+    height: auto;
+    width: 14%;
+    padding: 0% 6%;
+}
+.gmail{
+    margin: 2%;
+    padding:2% 5%;
+    height: auto;
+    width: 20%;
+}
+.formgmail{
+    
+    background-color: #fff;
+    border: 2px solid black;
+}
+.formval{
+    margin:5% auto;
+    
+    padding: 2% 4%;
+
+}
+.followus{
+    color:white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.follow{
+    padding:2%;
+    width: 20%;
+}
+.images{
+    margin:0% 20%;
+}
+
+.followpoint{
+    display: inline;
+    padding:6%;
+    padding-top: 20%;
+   
+}
+
+.contact{
+    display: flex;
+    margin: 3% 25%;
+    padding: 2% 0%;
+}
+.callus{
+    width: 30%;
+    margin:2%;
+}
+#btn{
+    display: block;
+    margin:2% auto;
+    padding: 3% 2%;
+}
+.heading{
+    color:black;
+    display: inline;
+}
+.formdiv{
+    margin:0% 4%;
+}
+.mailus{
+    color:white;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top:-9%;
+}
+.images img:hover{
+    animation:animation1 1s,wiggle 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation1 {
+    from{
+        width: 19%;
+        
+    }
+    to{
+        width: 23%;
+    }
+}
+@keyframes animation2{
+    from{
+        width: 50%;
+        
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes wiggle {
+    0%,7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+  
+.contact:hover{
+    animation-name: animation2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+.plan{
+    border:2px solid black;
+    margin: 4% 5%;
+    padding:4%;
+    margin-top: 0%;
+    display: flex;
+}
+
+.gymplan{
+    background-color: rgba(15, 13, 13, 0.671);
+    color:white;
+    border:1px solid rgb(180, 81, 81);
+    border-radius: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0% 3%;
+    padding:4%;
+    width: 80%;
+}
+.gymplan:hover{
+    animation-name: animation3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation3 {
+    from{
+        width: 80%;
+        height:64%;
+        font-size:1rem;
+    }
+    to{
+        width: 85%;
+        height:70%;
+        font-size:1.05rem;
+    }
+}
+.gymplan div{
+    flex-basis: 33.33%;
+}
+.gymplan h3{
+    padding:2%;
+    width: 100%;
+}
+
+.planhead{
+    text-align: center;
+}
+
+.gymplan ul{
+    padding-bottom: 3%;
+}
+.charges{
+    margin: auto;
+}
+.planhead1{
+    text-align: center;
+}
+

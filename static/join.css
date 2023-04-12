@@ -1,0 +1,259 @@
+
+body{
+    margin:0;
+    padding:0;
+}
+nav{
+    background-color:rgb(119, 61, 61);
+    height:4%;
+    border: 2px solid black;
+    display: flex;
+    padding:0% 2%;
+
+}
+.logoimage{
+    height: 50px;
+    width: 63px;
+}
+nav ul{
+    display:inline-flex;
+    justify-content: center;
+    margin:1% 19%;
+    list-style: none;
+    width: 50%;
+}
+nav li{
+    margin:0% 2%;
+    padding: 1% 2%;
+    text-align:justify; 
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(241, 239, 235);
+}
+nav a::after{
+    content:"";
+    display:block;
+    background-color:rgb(241, 239, 235);
+    height:12%;
+    width:0%;
+    position: relative;
+    top:40%;
+    transition: all ease-in-out 300ms;
+}
+nav a:hover::after{
+    width:100%;
+}
+#maincontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    height: auto;
+    width: 40%;
+    flex-direction: column;
+    border:2px solid rgb(19, 7, 7);
+    border-radius: 10px;
+    margin:2%;
+}
+#container h2{
+    text-align: center;
+}
+.points{
+    display: flex;
+}
+#myform{
+    padding: 2%;
+}
+#myform input{
+    padding:1% 1%;
+    margin:3% 1%;
+    width:50%;
+    border:1px solid black;
+    border-radius: 4px;
+}
+.check{
+    width:10px !important;
+    margin: 0% 2%;
+}
+#btn{
+    border:3px solid rgb(17, 16, 16);
+    background-color: rgb(119, 61, 61);
+    border-radius: 30px;
+    margin: auto;
+    padding:1% 4%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+.checkpoint{
+    display: inline;
+    padding: 3.5% 1%;
+}
+#foot{
+    background-color:rgb(119, 61, 61);
+    color:white;
+    padding: 0% 0%;
+    border:2px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 500px;
+}
+.Logo{
+    position: relative;
+    top:-40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Logo::after{
+    position: relative;
+    top:-45px;
+    display: block;
+    content:"";
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    
+}
+.footcontact{
+    display: flex;
+    height: 20%;
+}
+.followpoint{
+    height: auto;
+    width: 18%;
+    padding: 3% 6%;
+}
+
+.followpoint1{
+    height: 10%;
+    width: 14%;
+    padding: 8% 6%;
+}
+.gmail{
+    position: relative;
+    top:-100px;
+    margin: 2%;
+    padding:2% 5%;
+    height: auto;
+    width: 20%;
+}
+.formgmail{
+    background-color: #fff;
+    border: 2px solid black;
+}
+.formval{
+    margin:5% auto;
+    
+    padding: 2% 4%;
+
+}
+.followus{
+    color:white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.follow{
+    position: relative;
+    top:-100px;
+    padding:2%;
+    width: 20%;
+}
+.images{
+    margin:0% 20%;
+}
+
+
+.contact{
+    display: flex;
+    margin: 0% 25%;
+    padding: 0% 0%;
+    position: relative;
+    top:-10px;
+}
+.callus{
+    position: relative;
+    top:-100px;
+    width: 30%;
+    margin:2%;
+}
+.btn{
+    display: block;
+    margin:2% auto;
+    padding: 3% 2%;
+}
+.heading{
+    color:black;
+    display: inline;
+}
+.formdiv{
+    margin:0% 4%;
+}
+.mailus{
+    color:white;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top:-9%;
+}
+.images img:hover{
+    animation:animation1 1s,wiggle 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation1 {
+    from{
+        width: 19%;
+        
+    }
+    to{
+        width: 23%;
+    }
+}
+@keyframes animation2{
+    from{
+        width: 50%;
+        
+    }
+    to{
+        width: 65%;
+    }
+}
+@keyframes wiggle {
+    0%,7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+  
+.contact:hover{
+    animation-name: animation2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+#btn1{
+    display: block;
+    margin:2% auto;
+    padding: 3% 2%;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now</title>
+    <link rel="stylesheet" href="../static/join.css">
+    <link rel="icon" type="image" href="../static/images/Logo.png">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img class="logoimage" src="../static/images/dumbbell.png">
+        </div>
+        <ul>
+            <li class="option"><a href="/">HOME</a></li>
+            <li class="option"><a href="/enroll">ENROLL NOW</a></li>
+            <li class="option"><a href="/about">ABOUT US</a></li>
+            <li class="option"><a href="#foot">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div id="maincontent">
+        <div id="container">
+            <h2>Hurry up... Enter the Details</h2>
+            <form id="myform" action="/enroll" method="post">
+                <div class="points">
+                    <label for="name1">
+                        <h3>Name : </h3>
+                    </label>
+                    <input id="name1" type="text" name='name' placeholder="Enter Your name" required>
+                </div>
+                <div class="points">
+                    <label for="age1">
+                        <h3>Age : </h3>
+                    </label>
+                    <input id="age1" type="number" name='age' placeholder="Enter Your Age" required>
+                </div>
+                <div class="points">
+                    <label for="contact1">
+                        <h3>Contact No : </h3>
+                    </label>
+                    <input id="contact1" type="number" name='contact' placeholder="Enter Your Contact No" required>
+                </div>
+                <div class="points">
+                    <label for="gender">
+                        <h3>Gender : </h3>
+                    </label>
+
+                    <input type="radio" class="check" name="gender" value="Male">
+                    <div class="checkpoint">Male</div>
+                    <input type="radio" class="check" name="gender" value="Female">
+                    <div class="checkpoint">Female</div>
+                </div>
+                <div class="points">
+                    <label for="weight">
+                        <h3>Weight (in kg): </h3>
+                    </label>
+                    <input id="weight" type="number" name='weight' placeholder="Enter Your Weight" required>
+                </div>
+                <div class="points">
+                    <label for="height">
+                        <h3>Height (in cm): </h3>
+                    </label>
+                    <input id="height" type="number" name='height' placeholder="Enter Your Height" required>
+                </div>
+                <div class="points">
+                    <label for="facility">
+                        <h3>Facilities : </h3>
+                    </label>
+                    <input type="radio" class="check" name="facility" value="Basic">
+                    <div class="checkpoint">Basic</div>
+                    <input type="radio" class="check" name="facility" value="Pro">
+                    <div class="checkpoint">Pro</div>
+                </div>
+                <div class="points">
+                    <label for="plan">
+                        <h3>Plan : </h3>
+                    </label>
+                    <input type="radio" class="check" name="plan" value="Monthly">
+                    <div class="checkpoint">Monthly</div>
+                    <input type="radio" class="check" name="plan" value="3 Monthly">
+                    <div class="checkpoint">3 Months</div>
+                    <input type="radio" class="check" name="plan" value="Yearly">
+                    <div class="checkpoint">Yearly</div>
+                </div>
+                <div class="points">
+                    <label for="trainer">
+                        <h3>Personal Trainer Required : </h3>
+                    </label>
+                    <input type="radio" class="check" name="trainer" value="Yes">
+                    <div class="checkpoint">Yes</div>
+                    <input type="radio" class="check" name="trainer" value="No">
+                    <div class="checkpoint">No</div>
+                </div>
+                <div id="button">
+                    <button type="submit" id="btn" onclick="myfunc()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="foot">
+        <div class="Logo">
+            <h1>Ramesh Fitness Point </h1>
+        </div>
+        <div class="footcontact">
+            <div class="gmail">
+                <h3 class="mailus">Mail Us</h3>
+                <form class="formgmail" name="myform">
+                <div class="formdiv">
+                <label for="name2">
+                    <h4 class="heading">Name : </h4>
+                </label>
+                <input class="formval" id="name2" type="text" name='name2' placeholder="Enter Your Name" required>
+                </div>
+                <div class="formdiv">
+                <label for="gmailgmail">
+                    <h4 class="heading">G-mail : </h4>
+                </label>
+                <input class="formval" id="gmailgmail" type="text" name='gmailgmail' placeholder="Enter Your G-Mail" required>
+                </div>
+                <div class="formdiv">
+                <label for="contactmail">
+                    <h4 class="heading">Contact No : </h4>
+                </label>
+                <input class="formval" id="contactmail" type="number" name='contactmail' placeholder="Enter Your Contact">
+                </div>
+                <div class="formdiv">
+                <label for="message">
+                    <h4 class="heading">Message : </h4>
+                </label>
+                <input class="formval" id="message" type="text" name='message' placeholder="Drop your message...." required>
+                </div>
+                <button id="btn1" type="submit" onclick="myfunc2()">Send</button>
+                </form>
+            </div>
+            <div class="follow">
+                <div class="followus">
+                    <h3>Follow Us</h3>
+                </div>
+                    <div class="images">
+                        <img class="followpoint" src="../static/images/facebook.png">
+                        <img class="followpoint" src="../static/images/instagram.png">
+                        <img class="followpoint" src="../static/images/twitterlogo.jpeg">
+                    </div>
+            </div>
+        <div class="callus">
+        <div class="followus">
+        <h3>Contact Us</h3>
+        </div>
+        <div class="contact">
+        <img class="followpoint1" src="../static/images/phone-call.png">
+        <h2>94367839746</h2>
+        </div>
+        <div class="contact">
+        <img class="followpoint1" src="../static/images/whatsapp.png">
+        <h2>87374682982</h2>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../static/index.js"></script>
+
+</body>
+
+</html>
